@@ -1,0 +1,58 @@
+{
+	"ImportPath": "github.com/kwangchin/go-echo-vue",
+	"GoVersion": "go1.11",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/labstack/echo",
+			"Comment": "v3.3.4-55-gba1891b",
+			"Rev": "ba1891b3dc1fc5548330e580c51157ea5eb6604f"
+		},
+		{
+			"ImportPath": "github.com/labstack/gommon/color",
+			"Comment": "v0.2.7",
+			"Rev": "2a618302b929cc20862dda3aa6f02f64dbe740dd"
+		},
+		{
+			"ImportPath": "github.com/labstack/gommon/log",
+			"Comment": "v0.2.7",
+			"Rev": "2a618302b929cc20862dda3aa6f02f64dbe740dd"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-colorable",
+			"Comment": "v0.0.9-14-gefa5899",
+			"Rev": "efa589957cd060542a26d2dd7832fd6a6c6c3ade"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-isatty",
+			"Comment": "v0.0.4-6-g3fb116b",
+			"Rev": "3fb116b820352b7f0c281308a4d6250c22d94e27"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-sqlite3",
+			"Comment": "v1.10.0-3-geed79b8",
+			"Rev": "eed79b86572f203cc92e92048ba06b56a8ca06e8"
+		},
+		{
+			"ImportPath": "github.com/valyala/bytebufferpool",
+			"Comment": "v1.0.0-1-gcdfbe93",
+			"Rev": "cdfbe9377474227bb42120c1e22fd4433e7f69bf"
+		},
+		{
+			"ImportPath": "github.com/valyala/fasttemplate",
+			"Rev": "dcecefd839c4193db0d35b88ec65b4c12d360ab0"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/acme",
+			"Rev": "e4dc69e5b2fd71dcaf8bd5d054eb936deb78d1fa"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/acme/autocert",
+			"Rev": "e4dc69e5b2fd71dcaf8bd5d054eb936deb78d1fa"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "0e0164865330d5cf1c00247be08330bf96e2f87c"
+		}
+	]
+}
