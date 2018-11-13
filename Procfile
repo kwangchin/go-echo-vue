@@ -1,1 +1,1 @@
-web: main
+web: go-echo-vue
