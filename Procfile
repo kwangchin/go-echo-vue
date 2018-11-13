@@ -1,1 +1,1 @@
-web: go-echo-vue
+web: go run main.go
