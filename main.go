@@ -5,11 +5,11 @@ import (
 	"database/sql"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/kwangchin/go-echo-vue/handlers"
 
 	"github.com/labstack/echo"
-	// "github.com/labstack/echo/engine/standard"
 
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -63,8 +63,7 @@ func main() {
 	e.DELETE("/tasks/:id", handlers.DeleteTask(db))
 
 	// Start as a web server
-	// e.Logger.Fatal(e.Start(":1323"))
-	e.Logger.Fatal(e.StartTLS(":1323", "cert.pem", "key.pem"))
+	e.Logger.Fatal(e.StartTLS(GetPort(), "cert.pem", "key.pem"))
 }
 
 func initDB(filepath string) *sql.DB {
@@ -96,4 +95,14 @@ func migrate(db *sql.DB) {
 	if err != nil {
 		panic(err)
 	}
+}
+
+func getPort() string {
+	var port = os.Getenv("PORT")
+	
+	if port == "" {
+		port = "1323"
+	}
+	
+	return ":" + port
 }

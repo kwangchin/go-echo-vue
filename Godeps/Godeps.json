@@ -5,18 +5,18 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/labstack/echo",
-			"Comment": "v3.3.4-55-gba1891b",
-			"Rev": "ba1891b3dc1fc5548330e580c51157ea5eb6604f"
+			"Comment": "v3.3.4-57-gb37628b",
+			"Rev": "b37628bfc5b3b4e4f6c03a9540136254a918318c"
 		},
 		{
 			"ImportPath": "github.com/labstack/gommon/color",
-			"Comment": "v0.2.7",
-			"Rev": "2a618302b929cc20862dda3aa6f02f64dbe740dd"
+			"Comment": "v0.2.8",
+			"Rev": "7fd9f68ece0bcb1a905fac8f1549f0083f71c51b"
 		},
 		{
 			"ImportPath": "github.com/labstack/gommon/log",
-			"Comment": "v0.2.7",
-			"Rev": "2a618302b929cc20862dda3aa6f02f64dbe740dd"
+			"Comment": "v0.2.8",
+			"Rev": "7fd9f68ece0bcb1a905fac8f1549f0083f71c51b"
 		},
 		{
 			"ImportPath": "github.com/mattn/go-colorable",
@@ -44,15 +44,15 @@
 		},
 		{
 			"ImportPath": "golang.org/x/crypto/acme",
-			"Rev": "e4dc69e5b2fd71dcaf8bd5d054eb936deb78d1fa"
+			"Rev": "3d3f9f413869b949e48070b5bc593aa22cc2b8f2"
 		},
 		{
 			"ImportPath": "golang.org/x/crypto/acme/autocert",
-			"Rev": "e4dc69e5b2fd71dcaf8bd5d054eb936deb78d1fa"
+			"Rev": "3d3f9f413869b949e48070b5bc593aa22cc2b8f2"
 		},
 		{
 			"ImportPath": "golang.org/x/sys/unix",
-			"Rev": "0e0164865330d5cf1c00247be08330bf96e2f87c"
+			"Rev": "f3918c30c5c2cb527c0b071a27c35120a6c0719a"
 		}
 	]
 }
