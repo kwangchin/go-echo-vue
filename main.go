@@ -63,7 +63,7 @@ func main() {
 	e.DELETE("/tasks/:id", handlers.DeleteTask(db))
 
 	// Start as a web server
-	e.Logger.Fatal(e.StartTLS(getPort(), "cert.pem", "key.pem"))
+	e.Logger.Fatal(e.Start(getPort()))
 }
 
 func initDB(filepath string) *sql.DB {
