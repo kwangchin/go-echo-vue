@@ -12,8 +12,6 @@ import (
 	"github.com/labstack/echo"
 
 	_ "github.com/mattn/go-sqlite3"
-	
-	"golang.org/x/crypto/acme/autocert"
 )
 
 func main() {
@@ -23,10 +21,7 @@ func main() {
 	// Create a new instance of Echo
 	e := echo.New()
 
-	// Cache certificates
-	e.AutoTLSManager.Cache = autocert.DirCache("/var/www/.cache")
-
-		e.Static("/", "public")
+	e.Static("/", "public")
 	e.GET("/", func(c echo.Context) (err error) {
 		pusher, ok := c.Response().Writer.(http.Pusher)
 		if ok {
@@ -67,8 +62,8 @@ func main() {
 	e.POST("/tasks", handlers.PostTask(db))
 	e.DELETE("/tasks/:id", handlers.DeleteTask(db))
 
-	e.AutoTLSManager.HostPolicy = autocert.HostWhitelist("mysterious-brushlands-68789.herokuapp.com")
-	e.Logger.Fatal(e.StartAutoTLS(getPort()))
+	// Start as a web server
+	e.Logger.Fatal(e.Start(getPort()))
 }
 
 func initDB(filepath string) *sql.DB {
